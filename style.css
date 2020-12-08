@@ -1,0 +1,327 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+.section{
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+}
+.header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 150px 10px 70px;
+  background-color: #333;
+  color: white;
+}
+.logo{
+  width: 50px;
+}
+
+.menu-ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px;
+}
+.menu-link{
+  text-decoration: none;
+  color: white;
+}
+.menu-ul__li{
+  list-style: none;
+  margin-left: 50px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.menu-ul__li:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #D6D6D8;
+}
+.content{
+  padding: 100px 0 50px 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.boxOne{
+  position: relative;
+  max-width: 700px;
+}
+.boxOne-title{
+  color: #898681;
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+.boxOne-subtitle{
+  color: #898681;
+  font-size: 20px;
+  font-weight: 100;
+  padding-bottom: 30px;
+  line-height: 35px;
+}
+.boxOne-btn{
+  width: 160px;
+  height: 45px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  outline: none;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.boxOne-btn:hover{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+.iphone{
+  display: flex;
+  justify-content: center; 
+  width: 700px;
+}
+.boxOne-text{
+  position: relative;
+  animation-name: toLeft;
+  animation-duration: 1.5s
+}
+.btn-iphone{
+  position: relative;
+  width: 50px;
+  margin: 70px 0 0 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  animation-name: toBottom;
+  animation-duration: 2s;
+}
+.btn-iphone:hover{
+  transform: scale(1.2);
+}
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    left: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes toBottom {
+  0% {
+    opacity: 0;
+    bottom: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.boxTwo{
+  height: 500px;
+}
+.boxTwo-img{
+  border-radius: 30px;
+  padding: 20PX 20PX 20PX 20PX;
+  background-color: #2E2C2D;
+  position: relative;
+  width: 250px;
+  animation-name: toRight;
+  animation-duration: 2s;
+}
+
+@keyframes toRight {
+  0% {
+    opacity: 0;
+    right: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+@media (max-width:1250px){
+  .sectiom{}
+  .menu-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px;
+  }
+}
+@media (max-width:900px){
+ 
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px 15px 30px;
+  }
+  .logo{
+    width: 35px;
+  }
+  .menu-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+ 
+  .menu-ul__li{
+    margin-left: 20px;
+    font-size: 18px;
+   
+  }
+  .content{
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .boxOne{
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    padding: 0 ;
+    padding: 50px 30px 0 30px;
+  }
+  .boxOne-title{
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .boxOne-subtitle{
+    font-size: 18px;
+    font-weight: 100;
+    padding-bottom: 30px;
+    line-height: 25px;
+  }
+  .boxOne-btn{
+    width: 130px;
+    height: 40px;
+  }
+  .iphone{
+    display: block;
+    width: auto;
+  }
+  .btn-iphone{
+    position: relative;
+    width: 50px;
+    margin: 70px 0 0 20px;
+  }
+  .iphone1{
+    margin: 0px;
+  }
+ 
+  .boxTwo{
+    
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 100px 10px 20px 10px;
+  }
+  .boxTwo-img{
+    border-radius: 15px;
+  padding: 15px 15px 15px 15px ;
+  background-color: #2E2C2D;
+    width: 200px;
+  }
+  
+}
+@media (max-width:450px){
+  body{
+    background-color: black;
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+  }
+  .logo{
+    width: 30px;
+  }
+  .menu-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+ 
+  .menu-ul__li{
+    margin-left: 15px;
+    font-size: 16px;
+   
+  }
+  .content{
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .boxOne{
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    padding: 0 ;
+    padding: 50px 30px 0 30px;
+  }
+  .boxOne-title{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .boxOne-subtitle{
+    font-size: 14px;
+    font-weight: 100;
+    padding-bottom: 30px;
+    line-height: 20px;
+  }
+  .boxOne-btn{
+    width: 100px;
+    height: 35px;
+  }
+  .iphone{
+    display: block;
+    width: auto;
+  }
+  .btn-iphone{
+    position: relative;
+    width: 30px;
+    margin: 70px 0 0 20px;
+  }
+  .iphone1{
+    margin: 0px;
+  }
+ 
+  .boxTwo{
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 100px 10px 20px 10px;
+  }
+  .boxTwo-img{
+    width: 150px;
+  }
+  .circl{
+    top: 300px;
+    background-color: #2E2C2D;
+    clip-path: circle(400px at right 700px); 
+  }
+}

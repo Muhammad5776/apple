@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone 11</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <section class="section">
+    <div class="circle"></div>
+    <header class="header">
+      <div class="header-logo">
+        <a href="./index.html"><img class="logo" src="./img/apple.svg" alt="logo"></a>
+      </div>
+      <div class="header-menu">
+        <ul class="menu-ul">
+          <a class="menu-link" href="./index.html"><li class="menu-ul__li">Home</li></a>
+          <a class="menu-link" href="#"><li class="menu-ul__li">About</li></a>
+          <a class="menu-link" href="#"><li class="menu-ul__li">Contact</li></a>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <div class="boxOne">
+        <div class="boxOne-text">
+          <h2 class="boxOne-title">iPhone 11 Pro</h2>
+        <p class="boxOne-subtitle">iPhone 11 Pro and iPhone 11 Pro Max come in four gorgeous finishes including a beautiful new midnight green, and will be available for pre-order beginning Friday, September 13 and in stores beginning Friday, September 20.</p>
+        <a href="#"><button class="boxOne-btn" >Lern more</button></a>
+        </div>
+        <div class="iphone">
+          
+          <img class="btn-iphone iphone1"
+           src="./img/iphone_black.png"
+            alt="iphone_black"
+            onclick="imgSlider('./img2.png'); 
+            cricleChangeColor('#2E2C2D'); 
+            changeTitleColor('#898681'); 
+            changeSubtitleColor('#898681');
+            changeButtonColor ('#898681')
+            ">
+
+          <img class="btn-iphone"
+           src="./img/iphone_11.png"
+            alt="iphone_11"
+             onclick="imgSlider('./img1.png');
+              cricleChangeColor('#2F3A35');
+               changeTitleColor('#2F3A35');
+                changeSubtitleColor('#2F3A35')" >
+
+          <img class="btn-iphone"
+           src="./img/iphone_white.png"
+            alt="iphone_white"
+             onclick="imgSlider('./img3.png');
+              cricleChangeColor('#E0E0D8');
+               changeTitleColor('#E0E0D8');
+                changeSubtitleColor('#E0E0D8')" >
+
+          <img class="btn-iphone"
+            src="./img/iphone_11_gold.png"
+            alt="iphone_white"
+             onclick="imgSlider('./img4.png');
+              cricleChangeColor('#EECCB3');
+               changeTitleColor('#EECCB3');
+                changeSubtitleColor('#EECCB3')" >
+        </div>
+      </div>
+      <div class="boxTwo">
+        <img class="boxTwo-img" src="./img2.png" alt="phone-img">
+      </div>
+    </div>
+  </section>
+  
+  <script src="./app.js"></script>
+</body>
+</html>
